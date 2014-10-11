@@ -67,7 +67,7 @@
                     API.sendChat("/me Want to help and make the Bot better? Join here! http://github.com/RobinGall2910/basicBot-customization")
                 }
             }
-        }
+        },
            bot.commands.mooCommand = {
             command: 'cow',
             rank: 'user',
@@ -79,8 +79,7 @@
                     API.sendChat("/me Moo. ~Cowgomooo12")
                 }
             }
-        }
-                
+        };
 
         //Load the chat package again to account for any changes
         bot.loadChat();
@@ -136,8 +135,8 @@
         songstats: true,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+            NSFW: "https://rawgit.com/RobinGall2910/basicBot-customization/master/blacklists/NSFWBlacklist.json",
+            OP: "https://rawgit.com/RobinGall2910/basicBot-customization/master/blacklists/OPList.json"
         }
     }));
 
