@@ -25,7 +25,7 @@
 
 
     "usernotfound": "/me User not found.",
-    "notdisconnected": "/me @%%NAME%%, I have'nt seen you disconnnect here.",
+    "notdisconnected": "/me @%%NAME%%, I have not seen you disconnnect.",
     "noposition": "/me No last position known. The waitlist needs to update at least once to register a user's last position.",
     "toolongago": "/me @%%NAME%%'s last disconnect (DC or leave) was too long ago: %%TIME%%.",
     "valid": "/me @%%NAME%% disconnected %%TIME%% ago and should be at position %%POSITION%%.",
@@ -38,7 +38,7 @@
 
     "caps": "/me @%%NAME%%, unglue your capslock button please.",
     "askskip": "/me @%%NAME%%, don't ask for skips.",
-    "spam": "/me @%%NAME%%, please don't spam.",
+    "spam": "/me @%%NAME%%, please don't spam, You'll get banned.",
     "roomadvertising": "/me @%%NAME%%, don't post links to other rooms please.",
     "adfly": "/me @%%NAME%%, please change your autowoot program. We suggest PlugCubed: http://plugcubed.net/",
 
