@@ -51,7 +51,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Nice try.")
+                    API.sendChat("/me Nice try.");
                 }
             }
         },
@@ -64,7 +64,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Want to help and make the Bot better? Join here! http://github.com/RobinGall2910/basicBot-customization")
+                    API.sendChat("/me Want to help and make the Bot better? Join here! http://github.com/RobinGall2910/basicBot-customization");
                 }
             }
         },
@@ -76,7 +76,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Moo. ~Cowgomooo12")
+                    API.sendChat("/me Moo. ~Cowgomooo12");
                 }
             }
         },
@@ -88,7 +88,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("!website")
+                    API.sendChat("!website");
                 }
             }
         };
