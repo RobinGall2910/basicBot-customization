@@ -42,7 +42,7 @@
                     API.sendChat("/me Bacon!!!");
                 }
             }
-        }
+        };
            bot.commands.adminCommand = {
             command: 'admin',
             rank: 'user',
@@ -54,7 +54,7 @@
                     API.sendChat("/me Nice try.");
                 }
             }
-        }
+        };
            bot.commands.codeCommand = {
             command: 'code',
             rank: 'user',
@@ -66,7 +66,7 @@
                     API.sendChat("/me Want to help and make the Bot better? Join here! http://github.com/RobinGall2910/basicBot-customization");
                 }
             }
-        }
+        };
            bot.commands.cowCommand = {
             command: 'cow',
             rank: 'user',
@@ -78,7 +78,7 @@
                     API.sendChat("/me Moo. ~Cowgomooo12");
                 }
             }
-        }
+        };
           bot.commands.naCommand = {
             command: 'na',
             rank: 'manager',
@@ -90,7 +90,7 @@
                     API.sendChat("!website");
                 }
             }
-        }
+        };
         //Load the chat package again to account for any changes
         bot.loadChat();
 
