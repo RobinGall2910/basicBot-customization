@@ -68,7 +68,7 @@
                 }
             }
         },
-           bot.commands.mooCommand = {
+           bot.commands.cowCommand = {
             command: 'cow',
             rank: 'user',
             type: 'exact',
@@ -77,6 +77,18 @@
                 if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me Moo. ~Cowgomooo12")
+                }
+            }
+        },
+          bot.commands.naCommand = {
+            command: 'na',
+            rank: 'manager',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("!website")
                 }
             }
         };
