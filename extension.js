@@ -48,8 +48,8 @@
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me Nice try.");
                 }
@@ -60,8 +60,8 @@
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me Want to help and make the Bot better? Join here! http://github.com/RobinGall2910/basicBot-customization");
                 }
@@ -72,8 +72,8 @@
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me Moo. ~Cowgomooo12");
                 }
@@ -84,13 +84,24 @@
             rank: 'manager',
             type: 'exact',
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("!website");
+                    API.sendChat("/me This has no use yet. RANK: MANAGER TYPE: EXACT NAME COMMAND: na
+                    Java.lang.NoException");
                 }
             }
-        };
+        },
+          bot.commands.awayCommand = {
+            command: 'away',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me to be AFK, use !afk.")
+          }
         //Load the chat package again to account for any changes
         bot.loadChat();
 
@@ -99,7 +110,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "FreedomOPBot - Made by RobinGall2910",
+        botName: "ModernSociety/FOPBot - Made by RobinGall2910",
         language: "english",
         chatLink: "https://rawgit.com/RobinGall2910/basicBot-customization/master/lang/en.json",
         maximumAfk: 120,
@@ -139,7 +150,7 @@
         themeLink: null,
         fbLink: "We dont have a Facebook link yet.",
         youtubeLink: null,
-        website: "http://freedomop.boards.net/",
+        website: "FreedomOP: http://freedomop.boards.net/ ModernSociety: http://modernsociety.boards.net/",
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
