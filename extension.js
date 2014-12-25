@@ -110,7 +110,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "ModernSociety/FOPBot - Made by RobinGall2910",
+        botName: "GlobalBot - Made by RobinGall2910",
         language: "english",
         chatLink: "https://rawgit.com/RobinGall2910/basicBot-customization/master/lang/en.json",
         maximumAfk: 120,
