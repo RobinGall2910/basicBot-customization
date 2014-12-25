@@ -87,8 +87,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me This has no use yet. RANK: MANAGER TYPE: EXACT NAME COMMAND: na
-                    Java.lang.NoException");
+                    API.sendChat("/me This has no use yet. RANK: MANAGER TYPE: EXACT NAME COMMAND: na Java.lang.NoException.noUse");
                 }
             }
         },
