@@ -16,7 +16,6 @@
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
-
          bot.commands.commandCommand = {
          command: 'cmd',
          rank: 'user/bouncer/mod/manager',
@@ -29,78 +28,21 @@
          }
          }
          }
-
          */
-         bot.commands.baconCommand = {
+
+        bot.commands.baconCommand = {
             command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me Bacon!!!");
                 }
             }
-        },
-           bot.commands.adminCommand = {
-            command: 'admin',
-            rank: 'user',
-            type: 'exact',
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me Nice try.");
-                }
-            }
-        },
-           bot.commands.codeCommand = {
-            command: 'code',
-            rank: 'user',
-            type: 'exact',
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me Want to help and make the Bot better? Join here! http://github.com/RobinGall2910/basicBot-customization");
-                }
-            }
-        },
-           bot.commands.cowCommand = {
-            command: 'cow',
-            rank: 'user',
-            type: 'exact',
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me Moo. ~Cowgomooo12");
-                }
-            }
-        },
-          bot.commands.naCommand = {
-            command: 'na',
-            rank: 'manager',
-            type: 'exact',
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me This has no use yet. RANK: MANAGER TYPE: EXACT NAME COMMAND: na Java.lang.NoException.noUse");
-                }
-            }
-        },
-          bot.commands.awayCommand = {
-            command: 'away',
-            rank: 'user',
-            type: 'exact',
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me to be AFK, use !afk.")
-          }
+        };
+
         //Load the chat package again to account for any changes
         bot.loadChat();
 
@@ -108,13 +50,13 @@
 
     //Change the bots default settings and make sure they are loaded on launch
 
-    localStorage.setItem("TatsuBotsettings", JSON.stringify({
-        botName: "TatsuBot - Made by xDestroyer217",
+    localStorage.setItem("basicBotsettings", JSON.stringify({
+        botName: "basicBot",
         language: "english",
-        chatLink: "https://rawgit.com/RobinGall2910/basicBot-customization/master/lang/en.json",
-        startupCap: 200, // 1-200
-        startupVolume: 100, // 0-100
-        startupEmoji: true, 
+        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        startupCap: 1, // 1-200
+        startupVolume: 0, // 0-100
+        startupEmoji: false, // true or false
         maximumAfk: 120,
         afkRemoval: true,
         maximumDc: 60,
@@ -145,23 +87,23 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Welcome to the FreedomOP room! Join the server in Minecraft at fop.us.to and the boards at http://freedomop.boards.net/!",
+        motd: "Temporary Message of the Day",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: "http://robingall2910.github.io/FreedomOP/Plug/rules.html",
+        rulesLink: null,
         themeLink: null,
-        fbLink: "We dont have a Facebook link yet.",
+        fbLink: null,
         youtubeLink: null,
-        website: "FreedomOP: http://freedomop.boards.net/ ModernSociety: http://modernsociety.boards.net/",
+        website: null,
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/RobinGall2910/basicBot-customization/master/blacklists/NSFWList.json",
-            OP: "https://rawgit.com/RobinGall2910/basicBot-customization/master/blacklists/OPList.json"
+            NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
         }
     }));
 
