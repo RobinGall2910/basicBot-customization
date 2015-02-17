@@ -1,3 +1,4 @@
+// TatsuCraft Bot - Created by Yemasthui, Maintained and edited by xDestroyer217
 (function () {
 
     //Define our function responsible for extending the bot.
@@ -109,7 +110,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "TatsuCraft Bot - Created by Yemasthui, Maintained and edited by xDestroyer217",
+        botName: "basicBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         startupCap: 200, // 1-200
