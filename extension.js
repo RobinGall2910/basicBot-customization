@@ -109,9 +109,12 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "GlobalBot - Made by RobinGall2910",
+        botName: "TatsuBot - Made by xDestroyer217",
         language: "english",
         chatLink: "https://rawgit.com/RobinGall2910/basicBot-customization/master/lang/en.json",
+        startupCap: 200, // 1-200
+        startupVolume: 100, // 0-100
+        startupEmoji: true, 
         maximumAfk: 120,
         afkRemoval: true,
         maximumDc: 60,
@@ -121,6 +124,8 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
+        voteSkip: false,
+        voteSkipLimit: 10,
         timeGuard: true,
         maximumSongLength: 10,
         autodisable: true,
